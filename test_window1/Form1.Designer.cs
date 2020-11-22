@@ -104,7 +104,7 @@
             this.textBoxMax.Size = new System.Drawing.Size(76, 20);
             this.textBoxMax.TabIndex = 3;
             this.textBoxMax.Value = new decimal(new int[] {
-            1,
+            100,
             0,
             0,
             0});
