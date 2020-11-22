@@ -52,6 +52,7 @@ namespace test_window1
                     inputBox.Enabled = true;
                     TextForm.Enabled = true;
                     Vvod_the_text.Text = "Ввести значения";
+
                     break;
             
                 case 1:
@@ -102,11 +103,11 @@ namespace test_window1
                 case 1:
                     if (Convert.ToInt32(inputBox.Value) < chislo)
                     {
-                        TextForm.Text = $"{inputBox} меньше загадонова числа,\nпопробуйте снова угадать число";
+                        TextForm.Text = $"{inputBox.Value} меньше загадонова числа,\nпопробуйте снова угадать число";
                     }
-                    else if (Convert.ToInt32(inputBox.Value) > chislo)
+                    else if (Convert.ToInt32(inputBox.Value ) > chislo)
                     {
-                        TextForm.Text = $"{inputBox} больше загадонова числа,\nпопробуйте снова угадать число";
+                        TextForm.Text = $"{inputBox.Value} больше загадонова числа,\nпопробуйте снова угадать число";
                     }
                     else if (Convert.ToInt32(inputBox.Value) == chislo)
                     {
