@@ -47,7 +47,7 @@ namespace test_window1
                     Vvod_the_text.Visible = true;
                     inputBox.Visible = false;
                     TextForm.Visible = true;
-                    
+                    textBoxMin.Focus();
                     Vvod_the_text.Enabled = true;
                     inputBox.Enabled = true;
                     TextForm.Enabled = true;
@@ -62,6 +62,7 @@ namespace test_window1
                     TextMax.Visible = false;
                     textBoxMax.Visible = false;
                     textBoxMin.Visible = false;
+                    inputBox.Focus();
                     break;
                 case 2:
                     inputBox.Visible = false;
@@ -97,6 +98,7 @@ namespace test_window1
                         chislo = R.Next((int)textBoxMin.Value, (int)textBoxMax.Value);
                         TextForm.Text = Convert.ToString(chislo);
                         TextForm.Text = "Введите число, которое по вашему\nмнению загадал бот, в поле ниже.";
+
                         etap_pr++;
                     }
                     else
