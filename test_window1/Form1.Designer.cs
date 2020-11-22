@@ -58,7 +58,7 @@
             this.TextForm.AutoSize = true;
             this.TextForm.Enabled = false;
             this.TextForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.TextForm.Location = new System.Drawing.Point(136, 123);
+            this.TextForm.Location = new System.Drawing.Point(133, 116);
             this.TextForm.Name = "TextForm";
             this.TextForm.Size = new System.Drawing.Size(329, 48);
             this.TextForm.TabIndex = 1;

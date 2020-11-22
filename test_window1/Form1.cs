@@ -117,7 +117,7 @@ namespace test_window1
                     }
                     else if (Convert.ToInt32(inputBox.Value) == chislo)
                     {
-                        TextForm.Text = "Молодци ви угадали число!!!\nЕсли хотите сиграть ещо раз нажмите на кнопку ниже";
+                        TextForm.Text = "Молодци ви угадали число!!!\nЕсли хотите сиграть ещо\nраз нажмите на кнопку ниже";
                         etap_pr=0;
 
                     }
@@ -156,7 +156,7 @@ namespace test_window1
             inputBox.Enabled = true;
             TextForm.Enabled = true;
             Vvod_the_text.Text = "Ввести значения";
-           // TextForm.Text = "Введите диапазон, в котором\nбот будет загадивать число.";
+            TextForm.Text = "Введите диапазон, в котором\nбот будет загадивать число.";
             etap_pr = 0;
         }
 
