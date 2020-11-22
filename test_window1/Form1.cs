@@ -47,7 +47,7 @@ namespace test_window1
                     Vvod_the_text.Visible = true;
                     inputBox.Visible = false;
                     TextForm.Visible = true;
-                    Play_zanovo.Enabled = true;
+                    
                     Vvod_the_text.Enabled = true;
                     inputBox.Enabled = true;
                     TextForm.Enabled = true;
@@ -70,8 +70,6 @@ namespace test_window1
                     textBoxMax.Visible = false;
                     textBoxMin.Visible = false;
                     Vvod_the_text.Visible = false;
-                    Play_zanovo.Visible = true;
-                    Play_zanovo.Enabled = true;
                     
                     break;
             }
@@ -93,6 +91,7 @@ namespace test_window1
             switch (etap_pr)
             {
                 case 0:
+                    Vvod_the_text.Text = "Ввод текста из поля";
                     if (textBoxMax.Value>textBoxMin.Value)
                     {
                         chislo = R.Next((int)textBoxMin.Value, (int)textBoxMax.Value);
@@ -119,7 +118,7 @@ namespace test_window1
                     {
                         TextForm.Text = "Молодци ви угадали число!!!\nЕсли хотите сиграть ещо\nраз нажмите на кнопку ниже";
                         etap_pr=0;
-
+                        Vvod_the_text.Text = "Начать игру заново";
                     }
                     break;
             }
@@ -151,7 +150,6 @@ namespace test_window1
             Vvod_the_text.Visible = true;
             inputBox.Visible = false;
             TextForm.Visible = true;
-            Play_zanovo.Enabled = true;
             Vvod_the_text.Enabled = true;
             inputBox.Enabled = true;
             TextForm.Enabled = true;

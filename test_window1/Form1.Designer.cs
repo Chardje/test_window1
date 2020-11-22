@@ -30,7 +30,6 @@
         {
             this.Vvod_the_text = new System.Windows.Forms.Button();
             this.TextForm = new System.Windows.Forms.Label();
-            this.Play_zanovo = new System.Windows.Forms.Button();
             this.TextMin = new System.Windows.Forms.Label();
             this.TextMax = new System.Windows.Forms.Label();
             this.textBoxMax = new System.Windows.Forms.NumericUpDown();
@@ -65,18 +64,6 @@
             this.TextForm.Text = "Введите число, которое по вашему\r\nмнению загадал бот, в поле ниже.";
             this.TextForm.Visible = false;
             this.TextForm.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // Play_zanovo
-            // 
-            this.Play_zanovo.Enabled = false;
-            this.Play_zanovo.Location = new System.Drawing.Point(179, 288);
-            this.Play_zanovo.Name = "Play_zanovo";
-            this.Play_zanovo.Size = new System.Drawing.Size(222, 23);
-            this.Play_zanovo.TabIndex = 3;
-            this.Play_zanovo.Text = "Играть заново";
-            this.Play_zanovo.UseVisualStyleBackColor = true;
-            this.Play_zanovo.Visible = false;
-            this.Play_zanovo.Click += new System.EventHandler(this.button2_Click);
             // 
             // TextMin
             // 
@@ -150,6 +137,7 @@
             // 
             // MainForm
             // 
+            this.AcceptButton = this.Vvod_the_text;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
@@ -159,7 +147,6 @@
             this.Controls.Add(this.textBoxMax);
             this.Controls.Add(this.TextMax);
             this.Controls.Add(this.TextMin);
-            this.Controls.Add(this.Play_zanovo);
             this.Controls.Add(this.TextForm);
             this.Controls.Add(this.Vvod_the_text);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -178,7 +165,6 @@
 
         private System.Windows.Forms.Button Vvod_the_text;
         private System.Windows.Forms.Label TextForm;
-        private System.Windows.Forms.Button Play_zanovo;
         private System.Windows.Forms.Label TextMin;
         private System.Windows.Forms.Label TextMax;
         private System.Windows.Forms.NumericUpDown textBoxMax;
