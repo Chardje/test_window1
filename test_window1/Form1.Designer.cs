@@ -47,7 +47,7 @@
             this.Vvod_the_text.Location = new System.Drawing.Point(179, 250);
             this.Vvod_the_text.Name = "Vvod_the_text";
             this.Vvod_the_text.Size = new System.Drawing.Size(222, 23);
-            this.Vvod_the_text.TabIndex = 0;
+            this.Vvod_the_text.TabIndex = 10;
             this.Vvod_the_text.Text = "Ввод текста из поля";
             this.Vvod_the_text.UseVisualStyleBackColor = true;
             this.Vvod_the_text.Visible = false;
@@ -115,7 +115,7 @@
             0});
             this.textBoxMax.Name = "textBoxMax";
             this.textBoxMax.Size = new System.Drawing.Size(76, 20);
-            this.textBoxMax.TabIndex = 9;
+            this.textBoxMax.TabIndex = 3;
             this.textBoxMax.Value = new decimal(new int[] {
             1,
             0,
@@ -133,7 +133,7 @@
             0});
             this.textBoxMin.Name = "textBoxMin";
             this.textBoxMin.Size = new System.Drawing.Size(76, 20);
-            this.textBoxMin.TabIndex = 10;
+            this.textBoxMin.TabIndex = 2;
             this.textBoxMin.Visible = false;
             // 
             // inputBox
@@ -146,7 +146,7 @@
             0});
             this.inputBox.Name = "inputBox";
             this.inputBox.Size = new System.Drawing.Size(222, 20);
-            this.inputBox.TabIndex = 12;
+            this.inputBox.TabIndex = 1;
             // 
             // MainForm
             // 
