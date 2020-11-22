@@ -93,11 +93,17 @@ namespace test_window1
             switch (etap_pr)
             {
                 case 0:
-
-                    chislo = R.Next((int)textBoxMin.Value, (int)textBoxMax.Value);
-                    TextForm.Text = Convert.ToString(chislo);
-                    TextForm.Text = "Введите число, которое по вашему\nмнению загадал бот, в поле ниже.";
-                    etap_pr++;
+                    if (textBoxMax.Value>textBoxMin.Value)
+                    {
+                        chislo = R.Next((int)textBoxMin.Value, (int)textBoxMax.Value);
+                        TextForm.Text = Convert.ToString(chislo);
+                        TextForm.Text = "Введите число, которое по вашему\nмнению загадал бот, в поле ниже.";
+                        etap_pr++;
+                    }
+                    else
+                    {
+                        TextForm.Text = "Введите так, штоб Max бил\nбольше чем Min";
+                    }
                 break;
 
                 case 1:
